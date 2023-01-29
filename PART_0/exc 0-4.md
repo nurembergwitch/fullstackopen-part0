@@ -19,7 +19,7 @@ activate server
 server->>browser: JS file
 deactivate server
 
-JS event handler function is called upon change of state of the object
+JS event handler function is called upon change of state of the object.
 The browser starts the execution of the JS file
 browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
 JS displays JSON data in the browser as a list, each li tag containing individual note content
