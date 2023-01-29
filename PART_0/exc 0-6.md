@@ -25,9 +25,9 @@ activate server
 server ->> browser: displays JSON data
 deactivate server
 
-Upon submitting a new form, JS event handler prevents default behaviour (refreshing the page)
-A new note object is created and pushed to the notes list
-redrawNotes() function is called to re-render note list
+Note over browser, server: Upon submitting a new form, JS event handler prevents default behaviour (refreshing the page)
+Note over browser, server: A new note object is created and pushed to the notes list
+Note over browser, server: redrawNotes() function is called to re-render note list
 
 browser ->> server: POST request to https://fullstack-exampleapp.herokuapp.com/new_note_spa with some new note data (user hits the submit button) as JSON
 activate server
