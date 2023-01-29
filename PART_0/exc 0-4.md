@@ -22,7 +22,8 @@ deactivate server
 Note over browser, server: JS event handler function is called upon change of state of the object.
 Note over browser, server: The browser starts the execution of the JS file
 browser ->> server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-JS displays JSON data in the browser as a list, each li tag containing individual note content
+activate server
+Note over browser, server: JS displays JSON data in the browser as a list, each li tag containing individual note content
 
 
 browser ->> server: POST request to https://fullstack-exampleapp.herokuapp.com/new_note with some new note data (user hits the submit button) as the body of the POST request
